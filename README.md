@@ -45,3 +45,11 @@ plagiarism-checker/
 └── test_files/
     ├── file1.txt
     └── file2.txt
+
+How It Works
+
+Reads every .txt file in the folder.
+Splits the text into lowercase words.
+Builds a TF-IDF vector for each file (common words get lower weight, rare words get higher weight).
+Compares every pair of files using cosine similarity.
+Labels the result: HIGH (80%+), MEDIUM (50–80%), LOW (below 50%).
