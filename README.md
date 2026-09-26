@@ -1,54 +1,47 @@
-PROJECT DESCRIPTION
+## Project Description
 
- The Plagiarism Checker for Text Files is a simple project designed to compare the contents of text files and identify similarities between them. The program reads the given files, processes their text, compares the content, and provides a similarity result. This project demonstrates the use of file handling, text processing, and text comparison techniques to solve a practical problem.
- 
- Features
- 
-Compares the contents of text files.
-Detects similarities between the provided texts.
-Calculates a similarity percentage.
-Processes text before comparison.
-Provides a simple and easy-to-understand result.
-Useful for learning file handling and text comparison.
-Can be tested using different sample text files.
+Plagiarism Checker for Text Files is a Python-based project designed to compare the contents of two text files and identify how similar they are.
 
-🛠️ Technologies Used
+The program reads two text files, processes their content, compares the text, calculates a similarity percentage, and displays the result. It can help identify whether two text files contain a significant amount of similar content.
 
-Programming Language: [Your Programming Language]
-Text Processing: Used for processing the contents of text files.
-File Handling: Used to read and access text files.
-Text Comparison: Used to identify similarities between files.
-GitHub: Used for storing and documenting the project.
+## Features
 
-📂 Project Files
+- Reads and compares two text files
+- Processes and cleans the text
+- Calculates the similarity percentage
+- Identifies high, moderate, or low similarity
+- Displays a clear comparison result
+- Simple and easy-to-use command-line interface
+- Uses Python file handling for reading text files
 
-plagiarism-checker-text-files/
+## Technologies Used
+
+- Python
+- File Handling
+- Text Processing
+- String Comparison
+- Regular Expressions
+- GitHub
+
+## How It Works
+
+1. The user provides the first text file.
+2. The user provides the second text file.
+3. The program reads the contents of both files.
+4. The text is cleaned and processed.
+5. Both texts are compared.
+6. The similarity percentage is calculated.
+7. The final plagiarism result is displayed.
+
+## Project Structure
+
+```text 
+plagiarism-checker/
 │
+├── plagiarism_checker.py
 ├── README.md
-├── [main program file]
-├── sample1.txt
-├── sample2.txt
-└── requirements.txt
-File Details
-README.md – Contains the complete documentation of the project.
-[main program file] – Contains the main code for the plagiarism checker.
-sample1.txt – Contains sample text used for testing.
-sample2.txt – Contains another sample text for comparison.
-requirements.txt – Contains the libraries required to run the project, if any.
-
-▶️ How to Run
-
-Step 1: Clone the Repository
-git clone [YOUR-GITHUB-REPOSITORY-LINK]
-Step 2: Open the Project Folder
-cd plagiarism-checker-text-files
-Step 3: Install Required Libraries
-If the project uses external libraries, install them using:
-pip install -r requirements.txt
-If no external libraries are required, this step can be skipped.
-Step 4: Run the Program
-Run the main program using the appropriate command for your programming language.
-For Python:
-python [main_program_file].py
-Step 5: Provide the Text Files
-Provide the text files that you want to compare. The program will read the files, compare their contents, and display the similarity result.
+├── requirements.txt
+│
+└── test_files/
+    ├── file1.txt
+    └── file2.txt
