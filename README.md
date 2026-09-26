@@ -1,6 +1,8 @@
 PROJECT DESCRIPTION
+
  The Plagiarism Checker for Text Files is a simple project designed to compare the contents of text files and identify similarities between them. The program reads the given files, processes their text, compares the content, and provides a similarity result. This project demonstrates the use of file handling, text processing, and text comparison techniques to solve a practical problem.
  Features
+ 
 Compares the contents of text files.
 Detects similarities between the provided texts.
 Calculates a similarity percentage.
@@ -15,6 +17,7 @@ File Handling: Used to read and access text files.
 Text Comparison: Used to identify similarities between files.
 GitHub: Used for storing and documenting the project.
 📂 Project Files
+
 plagiarism-checker-text-files/
 │
 ├── README.md
@@ -28,7 +31,9 @@ README.md – Contains the complete documentation of the project.
 sample1.txt – Contains sample text used for testing.
 sample2.txt – Contains another sample text for comparison.
 requirements.txt – Contains the libraries required to run the project, if any.
+
 ▶️ How to Run
+
 Step 1: Clone the Repository
 git clone [YOUR-GITHUB-REPOSITORY-LINK]
 Step 2: Open the Project Folder
