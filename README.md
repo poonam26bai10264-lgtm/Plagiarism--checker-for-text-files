@@ -10,12 +10,15 @@ Processes text before comparison.
 Provides a simple and easy-to-understand result.
 Useful for learning file handling and text comparison.
 Can be tested using different sample text files.
+
 🛠️ Technologies Used
+
 Programming Language: [Your Programming Language]
 Text Processing: Used for processing the contents of text files.
 File Handling: Used to read and access text files.
 Text Comparison: Used to identify similarities between files.
 GitHub: Used for storing and documenting the project.
+
 📂 Project Files
 
 plagiarism-checker-text-files/
