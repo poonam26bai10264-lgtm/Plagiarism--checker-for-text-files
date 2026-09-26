@@ -1,6 +1,7 @@
 PROJECT DESCRIPTION
 
  The Plagiarism Checker for Text Files is a simple project designed to compare the contents of text files and identify similarities between them. The program reads the given files, processes their text, compares the content, and provides a similarity result. This project demonstrates the use of file handling, text processing, and text comparison techniques to solve a practical problem.
+ 
  Features
  
 Compares the contents of text files.
