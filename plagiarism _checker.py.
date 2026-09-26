@@ -1,0 +1,62 @@
+import re
+from difflib import SequenceMatcher
+
+
+def read_file(filename):
+    """Read and return the contents of a text file."""
+    try:
+        with open(filename, "r", encoding="utf-8") as file:
+            return file.read()
+    except FileNotFoundError:
+        print(f"Error: {filename} was not found.")
+        return None
+
+
+def clean_text(text):
+    """Prepare text for comparison."""
+    text = text.lower()
+    text = re.sub(r"[^\w\s]", "", text)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def calculate_similarity(text1, text2):
+    """Calculate similarity between two texts."""
+    return SequenceMatcher(None, text1, text2).ratio() * 100
+
+
+def main():
+    print("=" * 40)
+    print("      PLAGIARISM CHECKER")
+    print("=" * 40)
+
+    file1 = input("Enter first text file name: ")
+    file2 = input("Enter second text file name: ")
+
+    text1 = read_file(file1)
+    text2 = read_file(file2)
+
+    if text1 is None or text2 is None:
+        return
+
+    text1 = clean_text(text1)
+    text2 = clean_text(text2)
+
+    similarity = calculate_similarity(text1, text2)
+
+    print("\n" + "-" * 40)
+    print(f"File 1: {file1}")
+    print(f"File 2: {file2}")
+    print(f"Similarity: {similarity:.2f}%")
+    print("-" * 40)
+
+    if similarity >= 70:
+        print("High similarity detected.")
+    elif similarity >= 40:
+        print("Moderate similarity detected.")
+    else:
+        print("Low similarity detected.")
+
+
+if __name__ == "__main__":
+    main()
