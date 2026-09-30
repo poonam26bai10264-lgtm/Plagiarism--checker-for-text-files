@@ -14,15 +14,6 @@ The program reads two text files, processes their content, compares the text, ca
 - Simple and easy-to-use command-line interface
 - Uses Python file handling for reading text files
 
-## Technologies Used
-
-- Python
-- File Handling
-- Text Processing
-- String Comparison
-- Regular Expressions
-- GitHub
-
 ## How It Works
 
 1. The user provides the first text file.
